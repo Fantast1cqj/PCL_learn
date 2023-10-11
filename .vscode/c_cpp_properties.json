@@ -4,7 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include/pcl-1.13"
+                "/usr/include/pcl-1.13",
+                "/usr/include/eigen3",
+                "/usr/include/vtk-7.1"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

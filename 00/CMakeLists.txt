@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
 
-project(pcl_version.cpp)
+project(pcl_version)
+project(write2pcd)
 
-find_package(PCL REQUIRED)
+
+find_package(PCL 1.3 REQUIRED)
 
 include_directories(${PCL_INCLUDE_DIRS})
 
@@ -10,6 +12,9 @@ link_directories(${PCL_LIBRARY_DIRS})
 
 add_definitions(${PCL_DEFINITIONS})
 
-add_executable(pcl_version.cpp pcl_version.cpp.cpp)
+add_executable(pcl_version pcl_version.cpp)
+add_executable(write2pcd write2pcd.cpp)
 
-target_link_libraries(pcl_learn ${PCL_LIBRARIES})
+
+target_link_libraries(pcl_version ${PCL_LIBRARIES})
+target_link_libraries(write2pcd ${PCL_LIBRARIES})

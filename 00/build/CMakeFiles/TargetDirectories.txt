@@ -1,3 +1,0 @@
-/home/fqj/PCL_learn/00/build/CMakeFiles/rebuild_cache.dir
-/home/fqj/PCL_learn/00/build/CMakeFiles/edit_cache.dir
-/home/fqj/PCL_learn/00/build/CMakeFiles/pcl_learn.dir
