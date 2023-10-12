@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "/usr/include/pcl-1.13",
                 "/usr/include/eigen3",
-                "/usr/include/vtk-7.1"
+                "/usr/include/vtk-7.1",
+                "/usr/include/pcl-1.10"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

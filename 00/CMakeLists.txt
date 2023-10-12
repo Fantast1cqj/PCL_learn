@@ -4,7 +4,7 @@ project(pcl_version)
 project(write2pcd)
 
 
-find_package(PCL 1.3 REQUIRED)
+find_package(PCL REQUIRED)
 
 include_directories(${PCL_INCLUDE_DIRS})
 
