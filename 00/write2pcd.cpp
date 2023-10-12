@@ -14,17 +14,20 @@ int main(int argc,char** argv)
     cloud.is_dense  = false;
     cloud.resize(cloud.width * cloud.height);
     
+    // auto& point 声明一个引用变量point，指向当前循环迭代所指向的点
     for(auto& point: cloud)
     {
+        // 在0-RAND_MAX中生成一个随机数，除以(RAND_MAX + 1.0f)归一化，乘以1024到0-1024区间
         point.x = 1024 * rand () / (RAND_MAX + 1.0f);
         point.y = 1024 * rand () / (RAND_MAX + 1.0f);
         point.z = 1024 * rand () / (RAND_MAX + 1.0f);
     }
     //pcl::io::savePCDFileASCII("test_pcd.pcd", cloud);
-    pcl::io::savePCDFile("test_pcd.pcd", cloud);
+    pcl::io::savePCDFile("test_pcd_1.pcd", cloud);
     std::cout << "Done.\n";
     std::cout << "Saved " << cloud.size() << " data points to test_pcd.pcd." << std::endl;
 
+    // const 不改变指针值                                    
     for (const auto &point : cloud)
         std::cout << "    " << point.x << " " << point.y << " " << point.z << std::endl;
 

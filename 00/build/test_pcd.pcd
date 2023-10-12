@@ -1,14 +1,14 @@
 # .PCD v0.7 - Point Cloud Data file format
-VERSION 0.7
-FIELDS x y z
-SIZE 4 4 4
-TYPE F F F
-COUNT 1 1 1
-WIDTH 5
-HEIGHT 1
-VIEWPOINT 0 0 0 1 0 0 0
-POINTS 5
-DATA ascii
+VERSION 0.7    # PCD 版本
+FIELDS x y z   # 指定点可以有的每个维度和字段的名字 x y zrgb
+SIZE 4 4 4     # 用字节数指定每个维度的大小
+TYPE F F F     # I 表示有符号整型，U: 无符号整型，F: 浮点型
+COUNT 1 1 1    # 每一个元素包含的元素数目
+WIDTH 5        # 点云数据集的宽度
+HEIGHT 1       # 点云数据集的高度
+VIEWPOINT 0 0 0 1 0 0 0       # 数据集中点云数据的获取视点，平移 + 四元数
+POINTS 5                      # 总点数
+DATA ascii                    # 数据格式，有ascii 和二进制
 0.35222197 -0.15188313 -0.10639524
 -0.3974061 -0.47310591 0.29260206
 -0.73189831 0.66710472 0.44130373
