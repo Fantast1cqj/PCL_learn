@@ -6,5 +6,5 @@ int main()
     std::cout << "PCL version: " << PCL_VERSION_PRETTY << std::endl;
     std::cout << "PCL version111: " << PCL_VERSION_PRETTY << std::endl;
     return 0;
-    // test 5
+    // test 6
 }
