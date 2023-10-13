@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/drone/文档/PCD_learn/00/pcl_version.cpp
+iostream
+-
+pcl/pcl_config.h
+-
+
+/usr/include/pcl-1.10/pcl/pcl_config.h
+
