@@ -5,7 +5,7 @@
 
 int main(int argc,char** argv)
 {
-    pcl::PointCloud<pcl::PointXYZ>cloud;
+    pcl::PointCloud<pcl::PointXYZ> cloud;
     // 数据集宽度
     cloud.width = 5;
     // 数据集无组织
@@ -27,7 +27,7 @@ int main(int argc,char** argv)
     std::cout << "Done.\n";
     std::cout << "Saved " << cloud.size() << " data points to test_pcd.pcd." << std::endl;
 
-    // const 不改变指针值                                    
+    // const 不改变指针值
     for (const auto &point : cloud)
         std::cout << "    " << point.x << " " << point.y << " " << point.z << std::endl;
 

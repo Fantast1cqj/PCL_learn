@@ -1,4 +1,4 @@
-/home/drone/文档/PCD_learn/00/build/CMakeFiles/rebuild_cache.dir
-/home/drone/文档/PCD_learn/00/build/CMakeFiles/edit_cache.dir
-/home/drone/文档/PCD_learn/00/build/CMakeFiles/write2pcd.dir
-/home/drone/文档/PCD_learn/00/build/CMakeFiles/pcl_version.dir
+/home/oem/PCD_learn/00/build/CMakeFiles/rebuild_cache.dir
+/home/oem/PCD_learn/00/build/CMakeFiles/edit_cache.dir
+/home/oem/PCD_learn/00/build/CMakeFiles/pcd_viewer.dir
+/home/oem/PCD_learn/00/build/CMakeFiles/kdTree_write.dir

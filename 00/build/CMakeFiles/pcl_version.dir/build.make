@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/drone/文档/PCD_learn/00
+CMAKE_SOURCE_DIR = /home/oem/PCD_learn/00
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/drone/文档/PCD_learn/00/build
+CMAKE_BINARY_DIR = /home/oem/PCD_learn/00/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pcl_version.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/pcl_version.dir/flags.make
 
 CMakeFiles/pcl_version.dir/pcl_version.cpp.o: CMakeFiles/pcl_version.dir/flags.make
 CMakeFiles/pcl_version.dir/pcl_version.cpp.o: ../pcl_version.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/drone/文档/PCD_learn/00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pcl_version.dir/pcl_version.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pcl_version.dir/pcl_version.cpp.o -c /home/drone/文档/PCD_learn/00/pcl_version.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/PCD_learn/00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pcl_version.dir/pcl_version.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pcl_version.dir/pcl_version.cpp.o -c /home/oem/PCD_learn/00/pcl_version.cpp
 
 CMakeFiles/pcl_version.dir/pcl_version.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_version.dir/pcl_version.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drone/文档/PCD_learn/00/pcl_version.cpp > CMakeFiles/pcl_version.dir/pcl_version.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/PCD_learn/00/pcl_version.cpp > CMakeFiles/pcl_version.dir/pcl_version.cpp.i
 
 CMakeFiles/pcl_version.dir/pcl_version.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_version.dir/pcl_version.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drone/文档/PCD_learn/00/pcl_version.cpp -o CMakeFiles/pcl_version.dir/pcl_version.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/PCD_learn/00/pcl_version.cpp -o CMakeFiles/pcl_version.dir/pcl_version.cpp.s
 
 # Object files for target pcl_version
 pcl_version_OBJECTS = \
@@ -79,21 +79,46 @@ pcl_version_EXTERNAL_OBJECTS =
 
 pcl_version: CMakeFiles/pcl_version.dir/pcl_version.cpp.o
 pcl_version: CMakeFiles/pcl_version.dir/build.make
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_people.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libboost_system.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libqhull.so
+pcl_version: /usr/local/lib/libpcl_surface.so
+pcl_version: /usr/local/lib/libpcl_keypoints.so
+pcl_version: /usr/local/lib/libpcl_tracking.so
+pcl_version: /usr/local/lib/libpcl_recognition.so
+pcl_version: /usr/local/lib/libpcl_stereo.so
+pcl_version: /usr/local/lib/libpcl_outofcore.so
+pcl_version: /usr/local/lib/libpcl_people.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+pcl_version: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+pcl_version: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0
+pcl_version: /usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.71.0
 pcl_version: /usr/lib/libOpenNI.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+pcl_version: /usr/lib/libOpenNI2.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libfreetype.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libz.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libjpeg.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libpng.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libtiff.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libexpat.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libqhull_r.so
+pcl_version: /usr/local/lib/libpcl_registration.so
+pcl_version: /usr/local/lib/libpcl_segmentation.so
+pcl_version: /usr/local/lib/libpcl_features.so
+pcl_version: /usr/local/lib/libpcl_filters.so
+pcl_version: /usr/local/lib/libpcl_sample_consensus.so
+pcl_version: /usr/local/lib/libpcl_ml.so
+pcl_version: /usr/local/lib/libpcl_visualization.so
+pcl_version: /usr/local/lib/libpcl_search.so
+pcl_version: /usr/local/lib/libpcl_kdtree.so
+pcl_version: /usr/local/lib/libpcl_io.so
+pcl_version: /usr/local/lib/libpcl_octree.so
+pcl_version: /usr/lib/libOpenNI.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
 pcl_version: /usr/lib/libOpenNI2.so
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1
-pcl_version: /usr/lib/x86_64-linux-gnu/libfreetype.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libz.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libvtkInteractionImage-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libjpeg.so
 pcl_version: /usr/lib/x86_64-linux-gnu/libpng.so
 pcl_version: /usr/lib/x86_64-linux-gnu/libtiff.so
@@ -104,33 +129,8 @@ pcl_version: /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
-pcl_version: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
-pcl_version: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
-pcl_version: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_features.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_search.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_io.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
-pcl_version: /usr/lib/x86_64-linux-gnu/libpcl_common.so
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1
-pcl_version: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1
-pcl_version: /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1
-pcl_version: /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1
-pcl_version: /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1
-pcl_version: /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1
@@ -141,9 +141,17 @@ pcl_version: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1
+pcl_version: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libfreetype.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-7.1.so.7.1p.1
+pcl_version: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1
+pcl_version: /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1
+pcl_version: /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1
+pcl_version: /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1
+pcl_version: /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1
+pcl_version: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1
 pcl_version: /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1
@@ -170,8 +178,16 @@ pcl_version: /usr/lib/x86_64-linux-gnu/libICE.so
 pcl_version: /usr/lib/x86_64-linux-gnu/libX11.so
 pcl_version: /usr/lib/x86_64-linux-gnu/libXext.so
 pcl_version: /usr/lib/x86_64-linux-gnu/libXt.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
+pcl_version: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
+pcl_version: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
+pcl_version: /usr/local/lib/libpcl_common.so
+pcl_version: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+pcl_version: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+pcl_version: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0
+pcl_version: /usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.71.0
 pcl_version: CMakeFiles/pcl_version.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/drone/文档/PCD_learn/00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pcl_version"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oem/PCD_learn/00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pcl_version"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pcl_version.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -184,6 +200,6 @@ CMakeFiles/pcl_version.dir/clean:
 .PHONY : CMakeFiles/pcl_version.dir/clean
 
 CMakeFiles/pcl_version.dir/depend:
-	cd /home/drone/文档/PCD_learn/00/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drone/文档/PCD_learn/00 /home/drone/文档/PCD_learn/00 /home/drone/文档/PCD_learn/00/build /home/drone/文档/PCD_learn/00/build /home/drone/文档/PCD_learn/00/build/CMakeFiles/pcl_version.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oem/PCD_learn/00/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/PCD_learn/00 /home/oem/PCD_learn/00 /home/oem/PCD_learn/00/build /home/oem/PCD_learn/00/build /home/oem/PCD_learn/00/build/CMakeFiles/pcl_version.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pcl_version.dir/depend
 
