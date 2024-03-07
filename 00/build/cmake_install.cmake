@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/PCD_learn/00
+# Install script for directory: /home/oem/PCL_learn/00
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/oem/PCD_learn/00/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/oem/PCL_learn/00/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

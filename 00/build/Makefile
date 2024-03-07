@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/PCD_learn/00
+CMAKE_SOURCE_DIR = /home/oem/PCL_learn/00
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/PCD_learn/00/build
+CMAKE_BINARY_DIR = /home/oem/PCL_learn/00/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/PCD_learn/00/build/CMakeFiles /home/oem/PCD_learn/00/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/PCL_learn/00/build/CMakeFiles /home/oem/PCL_learn/00/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/PCD_learn/00/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/PCL_learn/00/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,57 +111,164 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pcd_viewer
+# Target rules for targets named pca
 
 # Build rule for target.
-pcd_viewer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcd_viewer
-.PHONY : pcd_viewer
+pca: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pca
+.PHONY : pca
 
 # fast build rule for target.
-pcd_viewer/fast:
-	$(MAKE) -f CMakeFiles/pcd_viewer.dir/build.make CMakeFiles/pcd_viewer.dir/build
-.PHONY : pcd_viewer/fast
+pca/fast:
+	$(MAKE) -f CMakeFiles/pca.dir/build.make CMakeFiles/pca.dir/build
+.PHONY : pca/fast
 
 #=============================================================================
-# Target rules for targets named kdTree_write
+# Target rules for targets named txt2pcd
 
 # Build rule for target.
-kdTree_write: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 kdTree_write
-.PHONY : kdTree_write
+txt2pcd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 txt2pcd
+.PHONY : txt2pcd
 
 # fast build rule for target.
-kdTree_write/fast:
-	$(MAKE) -f CMakeFiles/kdTree_write.dir/build.make CMakeFiles/kdTree_write.dir/build
-.PHONY : kdTree_write/fast
+txt2pcd/fast:
+	$(MAKE) -f CMakeFiles/txt2pcd.dir/build.make CMakeFiles/txt2pcd.dir/build
+.PHONY : txt2pcd/fast
 
-src/kdTree_write.o: src/kdTree_write.cpp.o
+#=============================================================================
+# Target rules for targets named normals
 
-.PHONY : src/kdTree_write.o
+# Build rule for target.
+normals: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 normals
+.PHONY : normals
+
+# fast build rule for target.
+normals/fast:
+	$(MAKE) -f CMakeFiles/normals.dir/build.make CMakeFiles/normals.dir/build
+.PHONY : normals/fast
+
+#=============================================================================
+# Target rules for targets named pcl_recognition_test
+
+# Build rule for target.
+pcl_recognition_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_recognition_test
+.PHONY : pcl_recognition_test
+
+# fast build rule for target.
+pcl_recognition_test/fast:
+	$(MAKE) -f CMakeFiles/pcl_recognition_test.dir/build.make CMakeFiles/pcl_recognition_test.dir/build
+.PHONY : pcl_recognition_test/fast
+
+homework/normals.o: homework/normals.cpp.o
+
+.PHONY : homework/normals.o
 
 # target to build an object file
-src/kdTree_write.cpp.o:
-	$(MAKE) -f CMakeFiles/kdTree_write.dir/build.make CMakeFiles/kdTree_write.dir/src/kdTree_write.cpp.o
-.PHONY : src/kdTree_write.cpp.o
+homework/normals.cpp.o:
+	$(MAKE) -f CMakeFiles/normals.dir/build.make CMakeFiles/normals.dir/homework/normals.cpp.o
+.PHONY : homework/normals.cpp.o
 
-src/kdTree_write.i: src/kdTree_write.cpp.i
+homework/normals.i: homework/normals.cpp.i
 
-.PHONY : src/kdTree_write.i
+.PHONY : homework/normals.i
 
 # target to preprocess a source file
-src/kdTree_write.cpp.i:
-	$(MAKE) -f CMakeFiles/kdTree_write.dir/build.make CMakeFiles/kdTree_write.dir/src/kdTree_write.cpp.i
-.PHONY : src/kdTree_write.cpp.i
+homework/normals.cpp.i:
+	$(MAKE) -f CMakeFiles/normals.dir/build.make CMakeFiles/normals.dir/homework/normals.cpp.i
+.PHONY : homework/normals.cpp.i
 
-src/kdTree_write.s: src/kdTree_write.cpp.s
+homework/normals.s: homework/normals.cpp.s
 
-.PHONY : src/kdTree_write.s
+.PHONY : homework/normals.s
 
 # target to generate assembly for a file
-src/kdTree_write.cpp.s:
-	$(MAKE) -f CMakeFiles/kdTree_write.dir/build.make CMakeFiles/kdTree_write.dir/src/kdTree_write.cpp.s
-.PHONY : src/kdTree_write.cpp.s
+homework/normals.cpp.s:
+	$(MAKE) -f CMakeFiles/normals.dir/build.make CMakeFiles/normals.dir/homework/normals.cpp.s
+.PHONY : homework/normals.cpp.s
+
+homework/pca.o: homework/pca.cpp.o
+
+.PHONY : homework/pca.o
+
+# target to build an object file
+homework/pca.cpp.o:
+	$(MAKE) -f CMakeFiles/pca.dir/build.make CMakeFiles/pca.dir/homework/pca.cpp.o
+.PHONY : homework/pca.cpp.o
+
+homework/pca.i: homework/pca.cpp.i
+
+.PHONY : homework/pca.i
+
+# target to preprocess a source file
+homework/pca.cpp.i:
+	$(MAKE) -f CMakeFiles/pca.dir/build.make CMakeFiles/pca.dir/homework/pca.cpp.i
+.PHONY : homework/pca.cpp.i
+
+homework/pca.s: homework/pca.cpp.s
+
+.PHONY : homework/pca.s
+
+# target to generate assembly for a file
+homework/pca.cpp.s:
+	$(MAKE) -f CMakeFiles/pca.dir/build.make CMakeFiles/pca.dir/homework/pca.cpp.s
+.PHONY : homework/pca.cpp.s
+
+homework/txt2pcd.o: homework/txt2pcd.cpp.o
+
+.PHONY : homework/txt2pcd.o
+
+# target to build an object file
+homework/txt2pcd.cpp.o:
+	$(MAKE) -f CMakeFiles/txt2pcd.dir/build.make CMakeFiles/txt2pcd.dir/homework/txt2pcd.cpp.o
+.PHONY : homework/txt2pcd.cpp.o
+
+homework/txt2pcd.i: homework/txt2pcd.cpp.i
+
+.PHONY : homework/txt2pcd.i
+
+# target to preprocess a source file
+homework/txt2pcd.cpp.i:
+	$(MAKE) -f CMakeFiles/txt2pcd.dir/build.make CMakeFiles/txt2pcd.dir/homework/txt2pcd.cpp.i
+.PHONY : homework/txt2pcd.cpp.i
+
+homework/txt2pcd.s: homework/txt2pcd.cpp.s
+
+.PHONY : homework/txt2pcd.s
+
+# target to generate assembly for a file
+homework/txt2pcd.cpp.s:
+	$(MAKE) -f CMakeFiles/txt2pcd.dir/build.make CMakeFiles/txt2pcd.dir/homework/txt2pcd.cpp.s
+.PHONY : homework/txt2pcd.cpp.s
+
+src/correspondence_grouping.o: src/correspondence_grouping.cpp.o
+
+.PHONY : src/correspondence_grouping.o
+
+# target to build an object file
+src/correspondence_grouping.cpp.o:
+	$(MAKE) -f CMakeFiles/pcl_recognition_test.dir/build.make CMakeFiles/pcl_recognition_test.dir/src/correspondence_grouping.cpp.o
+.PHONY : src/correspondence_grouping.cpp.o
+
+src/correspondence_grouping.i: src/correspondence_grouping.cpp.i
+
+.PHONY : src/correspondence_grouping.i
+
+# target to preprocess a source file
+src/correspondence_grouping.cpp.i:
+	$(MAKE) -f CMakeFiles/pcl_recognition_test.dir/build.make CMakeFiles/pcl_recognition_test.dir/src/correspondence_grouping.cpp.i
+.PHONY : src/correspondence_grouping.cpp.i
+
+src/correspondence_grouping.s: src/correspondence_grouping.cpp.s
+
+.PHONY : src/correspondence_grouping.s
+
+# target to generate assembly for a file
+src/correspondence_grouping.cpp.s:
+	$(MAKE) -f CMakeFiles/pcl_recognition_test.dir/build.make CMakeFiles/pcl_recognition_test.dir/src/correspondence_grouping.cpp.s
+.PHONY : src/correspondence_grouping.cpp.s
 
 src/pcd_viewer.o: src/pcd_viewer.cpp.o
 
@@ -169,7 +276,8 @@ src/pcd_viewer.o: src/pcd_viewer.cpp.o
 
 # target to build an object file
 src/pcd_viewer.cpp.o:
-	$(MAKE) -f CMakeFiles/pcd_viewer.dir/build.make CMakeFiles/pcd_viewer.dir/src/pcd_viewer.cpp.o
+	$(MAKE) -f CMakeFiles/pca.dir/build.make CMakeFiles/pca.dir/src/pcd_viewer.cpp.o
+	$(MAKE) -f CMakeFiles/normals.dir/build.make CMakeFiles/normals.dir/src/pcd_viewer.cpp.o
 .PHONY : src/pcd_viewer.cpp.o
 
 src/pcd_viewer.i: src/pcd_viewer.cpp.i
@@ -178,7 +286,8 @@ src/pcd_viewer.i: src/pcd_viewer.cpp.i
 
 # target to preprocess a source file
 src/pcd_viewer.cpp.i:
-	$(MAKE) -f CMakeFiles/pcd_viewer.dir/build.make CMakeFiles/pcd_viewer.dir/src/pcd_viewer.cpp.i
+	$(MAKE) -f CMakeFiles/pca.dir/build.make CMakeFiles/pca.dir/src/pcd_viewer.cpp.i
+	$(MAKE) -f CMakeFiles/normals.dir/build.make CMakeFiles/normals.dir/src/pcd_viewer.cpp.i
 .PHONY : src/pcd_viewer.cpp.i
 
 src/pcd_viewer.s: src/pcd_viewer.cpp.s
@@ -187,7 +296,8 @@ src/pcd_viewer.s: src/pcd_viewer.cpp.s
 
 # target to generate assembly for a file
 src/pcd_viewer.cpp.s:
-	$(MAKE) -f CMakeFiles/pcd_viewer.dir/build.make CMakeFiles/pcd_viewer.dir/src/pcd_viewer.cpp.s
+	$(MAKE) -f CMakeFiles/pca.dir/build.make CMakeFiles/pca.dir/src/pcd_viewer.cpp.s
+	$(MAKE) -f CMakeFiles/normals.dir/build.make CMakeFiles/normals.dir/src/pcd_viewer.cpp.s
 .PHONY : src/pcd_viewer.cpp.s
 
 # Help Target
@@ -196,13 +306,24 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... pcd_viewer"
-	@echo "... kdTree_write"
-	@echo "... src/kdTree_write.o"
-	@echo "... src/kdTree_write.i"
-	@echo "... src/kdTree_write.s"
+	@echo "... pca"
+	@echo "... rebuild_cache"
+	@echo "... txt2pcd"
+	@echo "... normals"
+	@echo "... pcl_recognition_test"
+	@echo "... homework/normals.o"
+	@echo "... homework/normals.i"
+	@echo "... homework/normals.s"
+	@echo "... homework/pca.o"
+	@echo "... homework/pca.i"
+	@echo "... homework/pca.s"
+	@echo "... homework/txt2pcd.o"
+	@echo "... homework/txt2pcd.i"
+	@echo "... homework/txt2pcd.s"
+	@echo "... src/correspondence_grouping.o"
+	@echo "... src/correspondence_grouping.i"
+	@echo "... src/correspondence_grouping.s"
 	@echo "... src/pcd_viewer.o"
 	@echo "... src/pcd_viewer.i"
 	@echo "... src/pcd_viewer.s"

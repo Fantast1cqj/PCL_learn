@@ -1,4 +1,6 @@
-/home/oem/PCD_learn/00/build/CMakeFiles/rebuild_cache.dir
-/home/oem/PCD_learn/00/build/CMakeFiles/edit_cache.dir
-/home/oem/PCD_learn/00/build/CMakeFiles/pcd_viewer.dir
-/home/oem/PCD_learn/00/build/CMakeFiles/kdTree_write.dir
+/home/oem/PCL_learn/00/build/CMakeFiles/edit_cache.dir
+/home/oem/PCL_learn/00/build/CMakeFiles/pca.dir
+/home/oem/PCL_learn/00/build/CMakeFiles/rebuild_cache.dir
+/home/oem/PCL_learn/00/build/CMakeFiles/txt2pcd.dir
+/home/oem/PCL_learn/00/build/CMakeFiles/normals.dir
+/home/oem/PCL_learn/00/build/CMakeFiles/pcl_recognition_test.dir
